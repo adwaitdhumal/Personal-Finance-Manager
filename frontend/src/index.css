@@ -1,0 +1,25 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #181818;
+  color: white;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .login-container,
+.dark-mode .dashboard,
+.dark-mode .transaction-list {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  box-shadow: none;
+}
+
+.dark-mode .transaction-list li {
+  border-bottom: 1px solid #444;
+}

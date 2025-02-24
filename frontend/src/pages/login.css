@@ -1,0 +1,108 @@
+.login-container {
+  width: 380px;
+  margin: auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  color: white;
+  outline: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.login-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-container input:focus {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.03);
+}
+
+.login-container button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+  margin-top: 15px;
+}
+
+.login-container button:hover {
+  background: linear-gradient(135deg, #0056b3, #004299);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 18px rgba(0, 123, 255, 0.4);
+}
+
+.auth-links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+  color: #ffaa00;
+}
+
+@media (max-width: 450px) {
+  .login-container {
+    width: 90%;
+    padding: 30px;
+  }
+}

@@ -1,0 +1,69 @@
+.dashboard {
+  max-width: 650px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.transaction-list {
+  list-style-type: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.transaction-list li {
+  padding: 15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.transaction-list li:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.transaction-list li:last-child {
+  border-bottom: none;
+}
+
+.income {
+  color: lightgreen;
+  font-weight: bold;
+}
+
+.expense {
+  color: lightcoral;
+  font-weight: bold;
+}
+
+/* Responsive Dashboard */
+@media (max-width: 500px) {
+  .dashboard {
+    width: 90%;
+  }
+}
